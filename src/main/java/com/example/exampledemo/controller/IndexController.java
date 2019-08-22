@@ -50,19 +50,13 @@ public class IndexController {
     }
 
     @RequestMapping(value = "/ddd", method = RequestMethod.PUT)
-    public @ResponseBody User updateStudent(@RequestBody User usr) {
-
-
-        String usrername = "ss";
-        String fullname = "sdsds";
-
-
-        usr.setUser_name(usrername);
-        usr.setFull_name(fullname);
-
-
-        //  Uaaser  = userService.updateUsers(usr);
-        return null;
+    public @ResponseBody String updateStudent(@RequestBody User usr) {
+        try {
+            userService.updateUsers(usr);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return "ok" ;
     }
 
 
