@@ -27,7 +27,7 @@ public class SwaggerConfig {
     // Describe your apis
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("ELNUR  Rest APIs")
+                .title("ELNUR Aliyev  Rest APIs")
                 .description("This page lists all the rest apis for ELNUR  App.")
                 .version("1.0-SNAPSHOT")
                 .build();
