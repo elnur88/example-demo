@@ -6,11 +6,18 @@
 	<environments default="development">
 		<environment id="development">
 			<transactionManager type="JDBC"/>
-			<dataSource type="POOLED">
-				<property name="driver" value="com.mysql.jdbc.Driver"/>
-				<property name="url" value="jdbc:mysql://localhost/webnew"/>
-				<property name="username" value="root"/>
-				<property name="password" value="My3829272sql"/>
+			<!--<dataSource type="POOLED">-->
+				<!--<property name="driver" value="com.mysql.cj.jdbc.Driver"/>-->
+				<!--<property name="url" value="jdbc:mysql://localhost/webnew"/>-->
+				<!--<property name="username" value="root"/>-->
+				<!--<property name="password" value="My3829272sql"/>-->
+			<!--</dataSource>-->
+            <dataSource type="POOLED" >
+				<property name="driver" value="oracle.jdbc.OracleDriver"/>
+				<property name="url" value="jdbc:oracle:thin:@10.120.41.4:1521:repdb"/>
+				<property name="username" value="AIST_SAR"/>
+				<property name="password" value="sar2011"/>
+				<property name="poolMaximumActiveConnections" value="50"/>
 			</dataSource>
 		</environment>
 	</environments>

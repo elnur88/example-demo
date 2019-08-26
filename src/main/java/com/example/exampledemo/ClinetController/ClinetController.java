@@ -20,6 +20,8 @@ public class ClinetController {
             null,
             new ParameterizedTypeReference<List<User>>(){});
     List<User> employees = response.getBody();
+    System.out.println(employees.get(1));
+
         employees.add(new User("sss", "ss"));
 
         return employees;
