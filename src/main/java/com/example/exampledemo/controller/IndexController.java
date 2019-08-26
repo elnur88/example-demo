@@ -22,9 +22,9 @@ public class IndexController {
     UserDao userDao = new UserDaoImpl();
 
     UserService userService = new UserServiceImpl(userDao);
-    @GetMapping
+    @GetMapping("/b")
     public String test(){
-        return "Orxaninn mavi gozleri";
+        return "Orxaninn maviii gozleri";
     }
 
     @GetMapping("/a")
