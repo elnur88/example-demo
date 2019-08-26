@@ -23,5 +23,6 @@
 	</environments>
 	<mappers>
 		<mapper class="com.example.exampledemo.Mapper.UserMapper" />
+		<mapper class="com.example.exampledemo.Mapper.RefreshMapper" />
 	</mappers>
 </configuration>

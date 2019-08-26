@@ -7,23 +7,23 @@ public class RefreshTable {
 
 
 
-    private int voen;
+    private String voen;
     private String full_name;
 
     public RefreshTable() {
     }
 
-    public RefreshTable(int voen, String full_name) {
+    public RefreshTable(String voen, String full_name) {
         this.voen = voen;
         this.full_name = full_name;
     }
 
 
-    public int getVoen() {
+    public String getVoen() {
         return voen;
     }
 
-    public void setVoen(int voen) {
+    public void setVoen(String voen) {
         this.voen = voen;
     }
 

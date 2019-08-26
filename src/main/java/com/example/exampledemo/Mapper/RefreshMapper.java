@@ -10,10 +10,10 @@ import java.util.List;
 public interface RefreshMapper {
 
             @Results({
-                    @Result(property = "user_name", column = "voen"),
-                    @Result(property = "full_name", column = "full_name")
+                    @Result(property = "voen", column = "id"),
+                    @Result(property = "full_name", column = "REPORT_TITLE")
             })
-    @Select("select voen,full_name from mv_taxpayer")
+    @Select("select id,REPORT_TITLE from sar_reports where REPORT_GROUP=174443")
     List<RefreshTable> selectVillage();
 
 
