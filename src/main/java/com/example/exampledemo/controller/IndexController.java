@@ -24,7 +24,7 @@ public class IndexController {
     UserService userService = new UserServiceImpl(userDao);
     @GetMapping("/b")
     public String test(){
-        return "Orxaninn maviii gozleri";
+        return "Orxaninnn maviii gozleri";
     }
 
     @GetMapping("/a")
